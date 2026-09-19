@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MIxWich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">MIxWich</div>
+                <div class="logo-tagline">Fresh & Customizable</div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="register.html">Register</a>
+                <a href="events.html">Events</a>
+                <a href="location.html">Location</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+            <a href="location.html">Location</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="page-icon">👤</div>
+            <h1>Register</h1>
+            <p>Join the MIxWich family and enjoy exclusive benefits, promotions, and personalized recommendations</p>
+        </div>
+    </div>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="form-container">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number *</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+62 812 3456 7890">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productChoice">Favorite Sandwich *</label>
+                        <select id="productChoice" name="productChoice">
+                            <option value="">Select your favorite sandwich</option>
+                            <option value="Classic Italian Supreme">Classic Italian Supreme</option>
+                            <option value="Grilled Chicken Delight">Grilled Chicken Delight</option>
+                            <option value="Veggie Paradise">Veggie Paradise</option>
+                            <option value="BBQ Beef Special">BBQ Beef Special</option>
+                            <option value="Mediterranean Feast">Mediterranean Feast</option>
+                            <option value="Spicy Chicken Ranch">Spicy Chicken Ranch</option>
+                            <option value="Turkey & Cranberry">Turkey & Cranberry</option>
+                            <option value="Teriyaki Chicken">Teriyaki Chicken</option>
+                            <option value="Caprese Garden">Caprese Garden</option>
+                            <option value="Ultimate Club">Ultimate Club</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address *</label>
+                        <textarea id="address" name="address" rows="4"
+                            placeholder="Enter your complete address including street, city, and postal code"></textarea>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; padding: 1rem; font-size: 1.125rem;">
+                        Complete Registration
+                    </button>
+
+                    <p class="text-center" style="margin-top: 1rem; font-size: 0.875rem; color: var(--text-gray);"> * All fields are required</p>
+                </form>
+            </div>
+
+            <div class="success-container" style="display: none;">
+                <div class="success-card">
+                    <div class="success-icon">✓</div>
+                    <h2>Registration Successful!</h2>
+                    <p>Thank you for registering! We've received your information and will contact you shortly.</p>
+                    <button class="btn btn-primary" onclick="resetForm()">Register Another</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>MIxWich</h3>
+                <p>Indonesia's premier customizable sandwich brand. Fresh ingredients, artisan bread, and endless possibilities since 2020.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@mixwich.id</li>
+                    <li>Phone: +62 21 1234 5678</li>
+                    <li>Follow us on Instagram: @mixwich.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIxWich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

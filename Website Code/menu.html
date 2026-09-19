@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - MIxWich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">MIxWich</div>
+                <div class="logo-tagline">Fresh & Customizable</div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="register.html">Register</a>
+                <a href="events.html">Events</a>
+                <a href="location.html">Location</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+            <a href="location.html">Location</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Explore our wide selection of premium sandwiches, each made with fresh ingredients and made to order.</p>
+        </div>
+    </div>
+
+    <div class="category-filter">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all" onclick="filterMenu('all')">All Sandwiches</button>
+            <button class="filter-btn" data-category="meat" onclick="filterMenu('meat')">Meat Lovers</button>
+            <button class="filter-btn" data-category="chicken" onclick="filterMenu('chicken')">Chicken</button>
+            <button class="filter-btn" data-category="vegetarian" onclick="filterMenu('vegetarian')">Vegetarian</button>
+        </div>
+    </div>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="cards-grid">
+                <div class="card menu-item" data-category="meat">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Classic Italian Supreme">
+                    </div>
+                    <div class="card-content">
+                        <h3>Classic Italian Supreme</h3>
+                        <p>Artisan ciabatta bread with premium salami, pepperoni, mozzarella cheese, fresh basil, sun-dried tomatoes, and Italian dressing. A taste of Italy in every bite.</p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="chicken">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1549831933-17b6be99565e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Grilled Chicken Delight">
+                    </div>
+                    <div class="card-content">
+                        <h3>Grilled Chicken Delight</h3>
+                        <p>Whole wheat bread with tender grilled chicken breast, fresh avocado slices, crisp lettuce, tomatoes, and our signature honey mustard sauce.</p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="vegetarian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1587015566802-5dc157c901cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Veggie Paradise">
+                    </div>
+                    <div class="card-content">
+                        <h3>Veggie Paradise</h3>
+                        <p>Multigrain bread loaded with roasted vegetables, fresh spinach, cucumber, bell peppers, hummus spread, feta cheese, and balsamic glaze.</p>
+                        <div class="card-footer">
+                            <span class="price"> 3$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="meat">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1691775755286-139f5ac07dde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="BBQ Beef Special">
+                    </div>
+                    <div class="card-content">
+                        <h3>BBQ Beef Special</h3>
+                        <p>Sesame seed bun with slow-cooked BBQ beef, caramelized onions, cheddar cheese, coleslaw, and smoky BBQ sauce. A hearty American classic.</p>
+                        <div class="card-footer">
+                            <span class="price"> 6$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="vegetarian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1777196583076-efc0ddff416c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Mediterranean Feast">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mediterranean Feast</h3>
+                        <p>Pita bread filled with falafel, tahini sauce, fresh vegetables, pickles, and a drizzle olive oil. Healthy and delicious.</p>
+                        <div class="card-footer">
+                            <span class="price"> 3$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="chicken">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1762335753144-9af99cae55f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Spicy Chicken Ranch">
+                    </div>
+                    <div class="card-content">
+                        <h3>Spicy Chicken Ranch</h3>
+                        <p>Toasted sourdough with spicy grilled chicken, jalapeños, pepper jack cheese, lettuce, tomatoes, and cool ranch dressing for the perfect balance.</p>
+                        <div class="card-footer">
+                            <span class="price"> 6$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="meat">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1764261687395-c8eb0da3e262?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Turkey & Cranberry">
+                    </div>
+                    <div class="card-content">
+                        <h3>Turkey & Cranberry</h3>
+                        <p>Honey oat bread with sliced roasted turkey breast, cranberry sauce, brie cheese, mixed greens, and Dijon mustard. Elegant and flavorful.</p>
+                        <div class="card-footer">
+                            <span class="price"> 6$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="chicken">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1763647814142-b1eb054d42f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Teriyaki Chicken">
+                    </div>
+                    <div class="card-content">
+                        <h3>Teriyaki Chicken</h3>
+                        <p>Asian-inspired sandwich with teriyaki glazed chicken, pineapple, cucumber, carrots, sesame seeds, and wasabi mayo on white bread.</p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="vegetarian">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1768758908192-64475ef3750a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Caprese Garden">
+                    </div>
+                    <div class="card-content">
+                        <h3>Caprese Garden</h3>
+                        <p>Fresh mozzarella, ripe tomatoes, basil leaves, and balsamic reduction on artisan focaccia. Simple, fresh, and delicious.</p>
+                        <div class="card-footer">
+                            <span class="price"> 3$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card menu-item" data-category="meat">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1775210603688-6355e3aabc87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Ultimate Club">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ultimate Club</h3>
+                        <p>Triple-decker sandwich with turkey, ham, bacon, lettuce, tomato, cheese, and mayo on toasted white bread. A classic done right.</p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <button class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.875rem;">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <div class="banner">
+                <h2>Make It Your Own</h2>
+                <p>All our sandwiches are fully customizable! Choose your bread, add extra toppings, switch sauces, or create your own unique combination. Your perfect sandwich, your way.</p>
+                <div class="banner-features">
+                    <div>✓ 8+ Bread Options</div>
+                    <div>✓ 20+ Fresh Toppings</div>
+                    <div>✓ 15+ Premium Meats</div>
+                    <div>✓ 10+ Homemade Sauces</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>MIxWich</h3>
+                <p>Indonesia's premier customizable sandwich brand. Fresh ingredients, artisan bread, and endless possibilities since 2020.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@mixwich.id</li>
+                    <li>Phone: +62 21 1234 5678</li>
+                    <li>Follow us on Instagram: @mixwich.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIxWich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

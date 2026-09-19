@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Locations - MIxWich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">MIxWich</div>
+                <div class="logo-tagline">Fresh & Customizable</div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="register.html">Register</a>
+                <a href="events.html">Events</a>
+                <a href="location.html">Location</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+            <a href="location.html">Location</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="page-icon">📍</div>
+            <h1>Our Locations</h1>
+            <p>Visit any of our three branches across Indonesia for the freshest sandwiches</p>
+        </div>
+    </div>
+
+    <section class="bg-white">
+        <div class="container">
+            <div class="map-placeholder">
+                <div class="map-placeholder-content">
+                    <div class="map-icon">📍</div>
+                    <p style="font-weight: 600; color: var(--text-gray);">Interactive Map</p>
+                    <p style="font-size: 0.875rem; color: var(--text-gray); margin-top: 0.5rem;">View all MIxWich locations on the map</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="location-card">
+                <div class="location-grid">
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1687945512099-400cbe94460c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="MIxWich Jakarta Central">
+                    </div>
+                    <div class="location-content">
+                        <div class="location-badge">
+                            <span>📍 Jakarta</span>
+                        </div>
+                        <h2>MIxWich Jakarta Central</h2>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem;">Our flagship store in the heart of Jakarta. Features a modern dining area with comfortable seating and free WiFi. Perfect for business meetings or casual dining.</p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">🗺️</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Address</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Jl. Thamrin No. 45, Menteng, Central Jakarta, DKI Jakarta 10350</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Phone</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">+62 21 3456 7890</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🕐</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Opening Hours</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Mon-Sun: 8:00 AM - 10:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-tags">
+                            <span class="feature-tag">Dine-in</span>
+                            <span class="feature-tag">Takeaway</span>
+                            <span class="feature-tag">Free WiFi</span>
+                            <span class="feature-tag">Parking Available</span>
+                        </div>
+
+                        <div class="location-buttons">
+                            <button class="btn btn-primary" style="flex: 1;">Get Directions</button>
+                            <button class="btn btn-outline" style="flex: 1;">Call Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <div class="location-grid">
+                    <div class="location-content">
+                        <div class="location-badge">
+                            <span>📍 Surabaya</span>
+                        </div>
+                        <h2>MIxWich Surabaya Plaza</h2>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem;">Recently opened in Surabaya's bustling commercial district. Spacious interior with a fresh, contemporary design. Ideal for families and groups.</p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">🗺️</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Address</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Jl. Pemuda No. 88, Gubeng, Surabaya, East Java 60271</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Phone</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">+62 31 8765 4321</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🕐</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Opening Hours</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Mon-Sun: 9:00 AM - 9:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-tags">
+                            <span class="feature-tag">Dine-in</span>
+                            <span class="feature-tag">Takeaway</span>
+                            <span class="feature-tag">Outdoor Seating</span>
+                            <span class="feature-tag">Kids Play Area</span>
+                        </div>
+
+                        <div class="location-buttons">
+                            <button class="btn btn-primary" style="flex: 1;">Get Directions</button>
+                            <button class="btn btn-outline" style="flex: 1;">Call Now</button>
+                        </div>
+                    </div>
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1685040235380-a42a129ade4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="MIxWich Surabaya Plaza">
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <div class="location-grid">
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1613274554329-70f997f5789f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="MIxWich Denpasar Beach">
+                    </div>
+                    <div class="location-content">
+                        <div class="location-badge">
+                            <span>📍 Denpasar, Bali</span>
+                        </div>
+                        <h2>MIxWich Denpasar Beach</h2>
+                        <p style="color: var(--text-gray); margin-bottom: 1.5rem;">Located near Bali's beautiful beaches with a tropical, relaxed atmosphere. Perfect spot for tourists and locals to enjoy fresh sandwiches after a day at the beach.</p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">🗺️</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Address</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Jl. Sunset Road No. 123, Kuta, Denpasar, Bali 80361</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Phone</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">+62 361 234 5678</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">🕐</span>
+                                <div>
+                                    <p style="font-weight: 600; font-size: 0.875rem;">Opening Hours</p>
+                                    <p style="font-size: 0.875rem; color: var(--text-gray);">Mon-Sun: 8:00 AM - 11:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="features-tags">
+                            <span class="feature-tag">Dine-in</span>
+                            <span class="feature-tag">Takeaway</span>
+                            <span class="feature-tag">Beach View</span>
+                            <span class="feature-tag">Smoothie Bar</span>
+                        </div>
+
+                        <div class="location-buttons">
+                            <button class="btn btn-primary" style="flex: 1;">Get Directions</button>
+                            <button class="btn btn-outline" style="flex: 1;">Call Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container text-center">
+            <h2 style="font-size: 2rem; color: var(--primary-green); margin-bottom: 1rem;">Coming to Your City Soon</h2>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto 2rem;">We're expanding across Indonesia! Want MIxWich in your city? Let us know and be the first to hear when we open a new location near you.</p>
+            <button class="btn btn-primary">Request a Location</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>MIxWich</h3>
+                <p>Indonesia's premier customizable sandwich brand. Fresh ingredients, artisan bread, and endless possibilities since 2020.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@mixwich.id</li>
+                    <li>Phone: +62 21 1234 5678</li>
+                    <li>Follow us on Instagram: @mixwich.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIxWich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

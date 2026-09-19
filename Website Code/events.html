@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Promotions - MIxWich</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">MIxWich</div>
+                <div class="logo-tagline">Fresh & Customizable</div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="register.html">Register</a>
+                <a href="events.html">Events</a>
+                <a href="location.html">Location</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+            <a href="location.html">Location</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Events & Promotions</h1>
+            <p>Don't miss out on our exciting events, competitions, and exclusive deals!</p>
+        </div>
+    </div>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="featured-event">
+                <div class="featured-grid">
+                    <div class="featured-content">
+                        <div
+                            style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: rgba(255,255,255,0.2); border-radius: 9999px; padding: 0.5rem 1rem; margin-bottom: 1rem;">
+                            <span style="font-weight: 600;">🏆 Featured Event</span>
+                        </div>
+                        <h2>MIxWich Sandwich Creation Contest</h2>
+                        <p style="font-size: 1.125rem; margin-bottom: 1rem;">July 15 - August 15, 2026</p>
+                        <p style="margin-bottom: 1.5rem;">Create your dream sandwich combination! Winner gets their creation featured on our menu for 3 months, plus 280$ cash prize. Submit your unique recipe online.</p>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1769970901521-2032c31be71b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="Sandwich Creation Contest">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Current Events & Promotions</h2>
+            </div>
+
+            <div class="cards-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1638132704781-d1bdc0f43a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="Grand Opening Sale">
+                        <div class="event-badge" style="background-color: #a855f7;">🎁 Promo</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Grand Opening Sale - Surabaya</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-gray); margin-bottom: 0.75rem;">📅 June 1-30, 2026</p>
+                        <p>Celebrate our newest location in Surabaya! Get 30% off all sandwiches during our grand opening month. First 100 customers each day receive a free drink!</p>
+                        <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;">View Details</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1763215733318-b99555c47f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="Student Discount">
+                        <div class="event-badge" style="background-color: #3b82f6;">📊 Promo</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Student Discount Program</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-gray); margin-bottom: 0.75rem;">📅 Ongoing - Every Monday</p>
+                        <p>Students get 20% off every Monday with valid student ID. Perfect for study groups and quick lunch breaks between classes!</p>
+                        <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;">View Details</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1767228312002-4c0b1beeb94f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="Family Bundle">
+                        <div class="event-badge" style="background-color: #10b981;">🎁 Promo</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Weekend Family Bundle</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-gray); margin-bottom: 0.75rem;">📅 Every Saturday & Sunday</p>
+                        <p>Get 4 sandwiches + 4 drinks + 1 large salad for only 8$ (save 3$!). Perfect for family gatherings and weekend picnics.</p>
+                        <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;">View Details</button>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1683731491956-28716b8bb618?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                            alt="Loyalty Program">
+                        <div class="event-badge" style="background-color: #ef4444;">📅 Promo</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Loyalty Program Launch</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-gray); margin-bottom: 0.75rem;">📅 Starting June 1, 2026</p>
+                        <p>Join our new loyalty program! Earn 1 point for every 2$ spent. Redeem 100 points for a free sandwich. Members get birthday specials and exclusive previews of new menu items.</p>
+                        <button class="btn btn-outline" style="width: 100%; margin-top: 1rem;">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Never Miss a Deal</h2>
+                <p>Subscribe to our newsletter to receive exclusive promotions, early access to events, and special birthday offers directly to your inbox.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>MIxWich</h3>
+                <p>Indonesia's premier customizable sandwich brand. Fresh ingredients, artisan bread, and endless possibilities since 2020.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@mixwich.id</li>
+                    <li>Phone: +62 21 1234 5678</li>
+                    <li>Follow us on Instagram: @mixwich.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIxWich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

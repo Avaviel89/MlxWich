@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIxWich - Fresh & Customizable Sandwiches</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">MIxWich</div>
+                <div class="logo-tagline">Fresh & Customizable</div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="register.html">Register</a>
+                <a href="events.html">Events</a>
+                <a href="location.html">Location</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+
+        <div class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="register.html">Register</a>
+            <a href="events.html">Events</a>
+            <a href="location.html">Location</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Craft Your Perfect <span class="highlight">Sandwich</span></h1>
+                    <p>Experience the freedom of customization with fresh, premium ingredients. From artisan bread to homemade sauces, every bite is made exactly how you like it.</p>
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="btn btn-primary">Explore Menu →</a>
+                        <a href="register.html" class="btn btn-secondary">Register Now</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1691775755286-139f5ac07dde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                        alt="Delicious MIxWich sandwich" onerror="handleImageError(this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Premium quality organic vegetables and meats are delivered daily for maximum freshness.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Artisan Quality</h3>
+                    <p>Hand-baked bread and homemade sauces made with care daily.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Service</h3>
+                    <p>Quick preparation without sacrificing quality, perfect for busy schedules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Best Sellers</h2>
+                <p>These customer favorites showcase what makes MIxWich special</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Classic Italian Supreme" onerror="handleImageError(this)">
+                    </div>
+                    <div class="card-content">
+                        <h3>Classic Italian Supreme</h3>
+                        <p>Artisan ciabatta with premium salami, mozzarella, fresh basil, tomatoes, and Italian dressing
+                        </p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <a href="menu.html">View Menu →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1549831933-17b6be99565e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Grilled Chicken Delight" onerror="handleImageError(this)">
+                    </div>
+                    <div class="card-content">
+                        <h3>Grilled Chicken Delight</h3>
+                        <p>Whole wheat bread with grilled chicken breast, avocado, lettuce, and honey mustard sauce</p>
+                        <div class="card-footer">
+                            <span class="price"> 5$ </span>
+                            <a href="menu.html">View Menu →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1587015566802-5dc157c901cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Veggie Paradise" onerror="handleImageError(this)">
+                    </div>
+                    <div class="card-content">
+                        <h3>Veggie Paradise</h3>
+                        <p>Multigrain bread loaded with fresh vegetables, hummus, feta cheese, and balsamic glaze</p>
+                        <div class="card-footer">
+                            <span class="price"> 3$ </span>
+                            <a href="menu.html">View Menu →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1685040235380-a42a129ade4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                        alt="MIxWich restaurant interior" onerror="handleImageError(this)">
+                </div>
+                <div class="hero-content">
+                    <h2 style="color: var(--primary-green); font-size: 2rem; margin-bottom: 1rem;">About MIxWich</h2>
+                    <p style="color: var(--text-gray); margin-bottom: 1rem;">Founded in 2020 as a small street-side shop
+                        in Jakarta, MIxWich has grown into Indonesia's premier customizable sandwich brand. Our
+                        commitment to fresh, premium ingredients and customer satisfaction has driven our expansion to
+                        three locations across Jakarta, Surabaya, and Denpasar.</p>
+                    <p style="color: var(--text-gray); margin-bottom: 1.5rem;">At MIxWich, we believe every customer
+                        deserves their perfect sandwich. That's why we offer complete customization - from artisan-baked
+                        bread to high-quality sliced meats, organic vegetables, and our signature homemade sauces. Every
+                        ingredient is carefully selected to ensure the highest quality and freshness.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Locations</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Menu Options</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Fresh Daily</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Years Strong</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>MIxWich</h3>
+                <p>Indonesia's leading customized sandwich brand. Fresh ingredients, artisan bread, and endless possibilities since 2020.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: info@mixwich.id</li>
+                    <li>Phone: +62 21 1234 5678</li>
+                    <li>Follow us on Instagram: @mixwich.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MIxWich. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
